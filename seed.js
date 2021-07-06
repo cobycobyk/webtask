@@ -23,6 +23,11 @@ const Car = require('./models/car');
     console.log(car)
     car.images.push(
       {name: "hero", desc: "hero", img: "https://cdnblob.fastly.carvana.io/2001112991/pre/original/2001112991-edc-03.jpg?dpr=1&width=383&v=2021-06-23T18:28:21.437Z"},
+      {name: "side", desc: "rs5side", img: "https://cdnblob.fastly.carvana.io/2001112991/pre/original/2001112991-edc-05.jpg?dpr=1&width=383&v=2021-06-23T18:28:21.437Z"},
+      {name: "open", desc: "rs5open", img: "https://cdnblob.fastly.carvana.io/2001112991/pre/original/2001112991-edo-03.jpg?dpr=1&width=383&v=2021-06-23T18:28:21.437Z"},
+      {name: "seats", desc: "rs5seats", img: "https://cdnblob.fastly.carvana.io/2001112991/pre/original/2001112991-manual-01.jpg?dpr=1&width=383&v=2021-06-23T18:28:21.437Z"},
+      {name: "console", desc: "rs5console", img: "https://cdnblob.fastly.carvana.io/2001112991/pre/original/2001112991-manual-09.jpg?dpr=1&width=383&v=2021-06-23T18:28:21.437Z"},
+      {name: "cluster", desc: "rs5cluster", img: "https://cdnblob.fastly.carvana.io/2001112991/pre/original/2001112991-manual-08.jpg?dpr=1&width=383&v=2021-06-23T18:28:21.437Z"},
     )
     console.log(car.images)
     car.save()

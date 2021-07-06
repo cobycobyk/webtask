@@ -1,0 +1,9 @@
+.detail {
+  display: flex;
+  flex-direction: column;
+  height: 432px;
+  width: 296px;
+  border: 1px solid green;
+  padding-top: 48px;
+  padding-left: 40px
+}

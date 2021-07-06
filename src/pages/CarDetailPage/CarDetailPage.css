@@ -1,0 +1,14 @@
+.cardetail {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardetail__head {
+  display: flex;
+}
+
+.cardetail__headhero {
+  height: 432px;
+  width: 728px;
+  border: 1px solid black;
+}

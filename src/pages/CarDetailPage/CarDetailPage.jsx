@@ -1,18 +1,38 @@
+import {useState, useEffect} from 'react';
 import './CarDetailPage.css';
+import Detail from '../../components/Detail/Detail';
+import Image from '../../components/Image/Image';
+import * as carAPI from '../../utilities/car-api';
+
 
 export default function CarDetailPage() {
+  const [car, setCar] = useState([])
+  const [image, setImage] = useState(null)
 
+  useEffect(function() {
+    async function carDetail() {
+      const car = await carAPI.getAll();
+      setCar(car)
+      setImage(car.images[0]?.img)
+    }
+    carDetail(); 
+  },[]);
+
+  const images = car.images?.map(image => {
+    return <Image image={image}/>
+  })
+  
   return (
-    <>
-      <h1>CarDetailPage</h1> 
-      <h2>CarDetailPage</h2> 
-      <h3>CarDetailPage</h3> 
-      <h4>CarDetailPage</h4> 
-      <h5>CarDetailPage</h5> 
-      <h6>CarDetailPage</h6> 
-      <h7>CarDetailPage</h7> 
-      <h8>CarDetailPage</h8> 
-      <h9>CarDetailPage</h9> 
-    </>
+    <div className="cardetail">
+      <div className="cardetail__head">
+        <img className="cardetail__headhero" src={image} alt="" />
+        <Detail car={car}/>
+      </div>
+      <div>{images}</div>
+      <h1>{car.name}</h1>
+      {/* image */}
+      {/* images */}
+      {/* otherdetails */}
+    </div>
   );
 }

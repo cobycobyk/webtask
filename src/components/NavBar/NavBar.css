@@ -1,14 +1,27 @@
 nav {
   display: flex;
   justify-content: flex-end;
-  background-color: black;
+  align-items: center;
   height: 56px;
+  background-color: var(--black);
 }
-.nav__left {
 
+.nav__left {
+  transform: skew(-15deg);
+  transform-origin: top;
 }
 
 .nav__right {
   display: flex;
   align-items: center;
+  background-color: var(--orange);
+  transform:skew(-15deg);
+}
+
+
+.nav__icon {
+  transform: skew(15deg);
+  color: var(--white);
+  max-height: 16px;
+  margin: 24px 24px 16px 24px;
 }

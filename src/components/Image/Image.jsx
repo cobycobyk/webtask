@@ -1,10 +1,9 @@
 import './Image.css';
 
-export default function Image({image}) {
+export default function Image({image, setImage}) {
   return (
     <div className="image">
-      <img src={image} alt="" />
-      image
+      <img onClick={() => setImage(image)} src={image} alt="" />
     </div>
   )
 }

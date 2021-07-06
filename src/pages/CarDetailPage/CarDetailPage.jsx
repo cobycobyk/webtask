@@ -7,7 +7,7 @@ import * as carAPI from '../../utilities/car-api';
 
 export default function CarDetailPage() {
   const [car, setCar] = useState([])
-  const [image, setImage] = useState(null)
+  const [image, setImage] = useState('')
 
   useEffect(function() {
     async function carDetail() {
@@ -19,7 +19,10 @@ export default function CarDetailPage() {
   },[]);
 
   const images = car.images?.map(image => {
-    return <Image image={image}/>
+    return <Image 
+    image={image.img}
+    setImage={setImage}
+    />
   })
   
   return (
@@ -28,7 +31,7 @@ export default function CarDetailPage() {
         <img className="cardetail__headhero" src={image} alt="" />
         <Detail car={car}/>
       </div>
-      <div>{images}</div>
+      <div className="images">{images}</div>
       <h1>{car.name}</h1>
       {/* image */}
       {/* images */}

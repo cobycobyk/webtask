@@ -7,3 +7,17 @@
   padding-top: 48px;
   padding-left: 40px
 }
+
+.detail__views {
+  display: flex;
+}
+.detail__viewsoption {
+  margin-right: 24px;
+}
+.detail__share {
+  display: flex;
+  align-items: center;
+}
+.detail__icon {
+  margin-left: 10px;
+}

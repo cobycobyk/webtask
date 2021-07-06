@@ -1,8 +1,8 @@
-
-
 h1 {
   font-weight: bold;
   font-size: 36px;
+  margin: 0 32 0 0;
+  padding: 0 !important
 }
 h2 {
   font-weight:normal;
@@ -15,7 +15,6 @@ h3 {
 h4 {
   font-weight: bold;
   font-size: 18px;
-  margin-top: 8px;
 }
 h5 {
   font-weight:500;
@@ -28,6 +27,7 @@ h6 {
 h7 {
   font-weight: 500;
   font-size: 12px;
+  color: var(--darkgray);
 }
 h8 {
   font-weight: bold;

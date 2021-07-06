@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  height: 56px;
+}
+.nav__left {
+
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+}

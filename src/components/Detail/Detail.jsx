@@ -14,7 +14,6 @@ export default function Detail({car}) {
         <h4 className="detail__insert">{car.mileage} miles</h4>
       </div>
       <div className="detail__right">
-        <div>&nbsp;</div>
         <h4 className="detail__option">Item Number: #{car._id?.slice(11,16)}</h4>
         <h4 className="detail__option">VIN: {car.vin}</h4>
         <div className="detail__share">

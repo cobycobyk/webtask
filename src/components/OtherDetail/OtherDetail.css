@@ -1,0 +1,40 @@
+.otherd {
+  height: 266px;
+  width: 480px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border: 1px solid black;
+}
+
+.otherd > div {
+  padding-left: 40px;
+}
+
+.otherd__title {
+  margin-top: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+.otherd__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.otherd__option {
+  color: var(--gray);
+}
+
+.otherd__inset {
+  margin-right: 60px;
+  font-weight: bold;
+}
+
+hr {
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}

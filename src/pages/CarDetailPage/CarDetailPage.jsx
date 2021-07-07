@@ -1,6 +1,7 @@
 import {useState, useEffect} from 'react';
 import './CarDetailPage.css';
 import Detail from '../../components/Detail/Detail';
+import OtherDetail from '../../components/OtherDetail/OtherDetail';
 import Image from '../../components/Image/Image';
 import * as carAPI from '../../utilities/car-api';
 
@@ -32,10 +33,10 @@ export default function CarDetailPage() {
         <Detail car={car}/>
       </div>
       <div className="images">{images}</div>
-      <h1>{car.name}</h1>
-      {/* image */}
-      {/* images */}
-      {/* otherdetails */}
+      <div className="cardetail__other">
+        <OtherDetail car={car} title={'EXTERIOR'}/>
+        <OtherDetail car={car} title={'PERFORMANCE'}/>
+      </div>
     </div>
   );
 }

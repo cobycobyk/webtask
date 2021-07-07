@@ -13,3 +13,8 @@
   object-fit: cover;
   border: 1px solid black;
 }
+
+.cardetail__other {
+  display: flex;
+  justify-content: center;
+}

@@ -10,5 +10,6 @@
 .cardetail__headhero {
   height: 432px;
   width: 728px;
+  object-fit: cover;
   border: 1px solid black;
 }

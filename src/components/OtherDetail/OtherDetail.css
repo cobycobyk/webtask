@@ -1,9 +1,9 @@
 .otherd {
-  height: 266px;
   width: 480px;
   margin-left: 4px;
   margin-right: 4px;
-  border: 1px solid black;
+  padding-bottom: 30px;
+  background-color: var(--white);
 }
 
 .otherd > div {
@@ -25,6 +25,7 @@
 
 .otherd__option {
   color: var(--gray);
+  height: 18px;
 }
 
 .otherd__inset {
@@ -37,4 +38,16 @@ hr {
   margin-left: 40px;
   margin-top: 16px;
   margin-bottom: 16px;
+}
+
+@media only screen and (max-width: 400px) {
+  .otherd {
+    width: 100vmin;
+    margin-right: 0px;
+    margin-bottom: 16px;
+  }
+
+  .otherd__inset {
+    margin-right: 20px;
+  }
 }

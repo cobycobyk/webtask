@@ -33,6 +33,7 @@ export default function CarDetailPage() {
         <Detail car={car}/>
       </div>
       <div className="images">{images}</div>
+      <div className="callus">CALL US</div>
       <div className="cardetail__other">
         <OtherDetail car={car} title={'EXTERIOR'}/>
         <OtherDetail car={car} title={'PERFORMANCE'}/>

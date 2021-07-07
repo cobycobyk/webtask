@@ -6,16 +6,16 @@ nav {
   background-color: var(--black);
 }
 
+
 .nav__left {
   transform: skew(-15deg);
-  transform-origin: top;
 }
 
 .nav__right {
   display: flex;
-  align-items: center;
-  background-color: var(--orange);
   transform:skew(-15deg);
+  transform-origin: right;
+  background-color: var(--orange);
 }
 
 
@@ -24,4 +24,17 @@ nav {
   color: var(--white);
   max-height: 16px;
   margin: 24px 24px 16px 24px;
+  transform-origin: top;
+}
+
+@media only screen and (max-width: 400px) {
+  nav {
+    min-width: 100vmin;
+  }
+  .nav__left:first-child {
+    display: none;
+  }
+  .nav__right>:last-child {
+    display: none;
+  }
 }

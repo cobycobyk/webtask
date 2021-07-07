@@ -4,9 +4,8 @@
   align-items: flex-start;
   height: 432px;
   width: 296px;
-  border: 1px solid green;
   padding-left: 40px;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 .detail__hero {
  font-weight: bold;
@@ -48,4 +47,29 @@
 
 .detail__count {
   margin-top: 0px;
+}
+
+@media only screen and (max-width: 400px) {
+  .detail {
+    /* height: 256px; */
+    margin-bottom: 5px;
+    display:-webkit-box;
+    height: 256px;
+  }
+  .detail__hero {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    padding-top: 0px;
+   }
+  .detail__right {
+    margin-top: 88px;
+    margin-left: 20px;
+  }
+
+  .hidden {
+    display: none;
+  }
+  .left {
+    display: flex;
+  }
 }
